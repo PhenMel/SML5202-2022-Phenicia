@@ -4,7 +4,64 @@ title: Application
 ---
 
 <h1>Apply your Spanish knowlege to real life situations</h1>
-<p>Here you can learn about:</p>
+
+<p>With this activity you can practice translating these Spanish sentences:</p>
+
+<button id="btn1">Click me</button>
+<p id="demo"></p>
+<script>
+btn1.addEventListener("click", makeSentence);
+function makeSentence() {
+
+var person = {
+    names: [ "Brian", "Manuel", "Pilar", "Blessing", "Phenicia", "Bismah", "Sumayah", "Mukhtar", "Vincent", "Samantha", "Él", "Ella" ],
+    verbs: [ "canta", "come", "corre", "camina", "bebe", "no habla", "no come", "no corre", "no camina", "no bebe"],
+    adverbs: ["lentamente", "rápidamente", "ruidosamente", "mucho", "por la mañana", ]
+   
+};
+  
+var i;
+var text = "";
+for (i = 0; i < person.names.length; i++) {
+
+  name = person.names[i];
+  verb = person.verbs[Math.floor(Math.random() * person.verbs.length)];
+  adv = person.adverbs[Math.floor(Math.random() * person.adverbs.length)]; 
+  text += name + " " + verb + " " + adv + "<br>";
+  document.getElementById("demo").innerHTML = text;
+ }  
+}
+</script>
+
+<button id="btn2">Try me</button>
+<p id="demo"></p>
+<script>
+btn2.addEventListener("click", makeSentence);
+function makeSentence() {
+
+var person = {
+    names: [ "Brian, Manuel y Pilar", "Blessing, Phenicia y Bismah", "Sumayah, Mukhtar y Vincent", "Éllos" ],
+    verbs: [ "cantan", "comen", "corren", "caminan", "beben", "no hablan", "no comen", "no corren", "no caminan", "no beben"],
+    adverbs: ["lentamente", "rápidamente", "ruidosamente", "mucho", "por la mañana", ]
+   
+};
+  
+var i;
+var text = "";
+for (i = 0; i < person.names.length; i++) {
+
+  name = person.names[i];
+  verb = person.verbs[Math.floor(Math.random() * person.verbs.length)];
+  adv = person.adverbs[Math.floor(Math.random() * person.adverbs.length)]; 
+  text += name + " " + verb + " " + adv + "<br>";
+  document.getElementById("demo").innerHTML = text;
+ }  
+}
+</script>
+
+
+
+
   <ol>
     <li></li>
     <li></li>
