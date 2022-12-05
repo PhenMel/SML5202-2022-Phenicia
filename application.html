@@ -33,10 +33,11 @@ for (i = 0; i < person.names.length; i++) {
 }
 </script>
 
+<hr>
 <button id="btn2">Try me</button>
 <p id="demo"></p>
 <script>
-btn2.addEventListener("click", makeSentence);
+btn2.addEventListener("try", makeSentence);
 function makeSentence() {
 
 var person = {
@@ -57,9 +58,11 @@ for (i = 0; i < person.names.length; i++) {
   document.getElementById("demo").innerHTML = text;
  }  
 }
-</script>
+</script> 
 
-<p>With is exercise you can learn some spanish sayings(Refranes) that you can use in your daily conversations to seem more natural!</>
+<hr>
+
+<p>With this exercise you can learn some spanish sayings(Refranes) that you can use in your daily conversations to seem more natural!</>
    <button id="refránBtn">See another refrán</button>
  <dl id="quote"></dl>
 <script>
