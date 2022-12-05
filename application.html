@@ -59,15 +59,46 @@ for (i = 0; i < person.names.length; i++) {
 }
 </script>
 
+<p>With is exercise you can learn some spanish sayings(Refranes) that you can use in your daily conversations to seem more natural!</>
+   <button id="refránBtn">See another refrán</button>
+ <dl id="quote"></dl>
+<script>
+
+var idioms = [ 
+'Aunque la mona se vista de seda, la mona se queda = A monkey in silk is a monkey no less.', 
+'Mucho ruido y pocas nueces = All talk and no action.', 
+'No hay mal que dure cien años =  Even the longest night must end.',    
+'Querer es poder =  Where there is a will there is a way.',
+
+];
+
+var examples = [
+'Example: <i> Ya sabes lo que dicen, aunque la mona se vista de seda, mona se queda = You know what they say, a monkey in silk is a monkey no less.</i>', 
+'Example: <i>¿Ya terminó Miguel el proyecto sobre el que nos estaba hablando? - No, ya sabes: Mucho ruido y pocas nueces = Did Miguel finish the project he was telling us about? - No, you know: All talk and no action.</i>', 
+'Example: <i>Aunque este suplicio parezca eterno, recuerda que no hay mal que dure cien años = Although this ordeal looks like it will last forever, remember that even the longest night must end.</i>',
+'Example: <i>Querer es poder, y el Dr. Andy y su equipo quisieron y pudieron = Where there is a wil Dr.Andy and his team find a way.</i>',
 
 
+];
 
-  <ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    
- </ol> 
+var quoteNo;
+var idiomNo;
+refránBtn.addEventListener("click", loadQuote);
+function loadQuote() {
+    idiomNo = Math.floor(Math.random() * (idioms.length));
+    if(idiomNo !== quoteNo) {
+    //alert(quotes[quoteNo]);
+    	document.getElementById("quote").innerHTML = "<dt>" + idioms[idiomNo] + "</dt>" + "<dd>" + examples[idiomNo] + "</dd>";
+   	quoteNo = idiomNo;
+    	return quoteNo;
+    	}
+    	else {
+    	loadQuote();
+    	}
+	}
+loadQuote();
+</script>
+
+<hr>
 
 <p><a href="index.html">Home</a></p>
