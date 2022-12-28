@@ -2,6 +2,44 @@
   background-image: linear-gradient(to bottom left, #ec427f, #5a30a3); 
 }
 
+.footer {
+    background-color: #ec427f;
+    color: white;
+    font-size:90%;
+}
+
+
+.footer a {
+  color: #cbd5e8;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;	
+}
+
+
+pre {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	overflow: auto;
+	font-size: .875em;
+	padding: 15px;
+	background-color: #ec427f;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+code {
+    font-family: var(--bs-font-monospace);
+    font-size: 1em;
+}
+
+
+
+
+
 /** Wikipedia Search Styles **/
 
 *,
