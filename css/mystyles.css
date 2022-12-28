@@ -3,14 +3,14 @@
 }
 
 .footer {
-    background-color: #ec427f;
+    background-color: #5a30a3;
     color: white;
     font-size:90%;
 }
 
 
 .footer a {
-  color: #cbd5e8;
+  color: #5a30a3;
   text-decoration: none;
 }
 
@@ -26,7 +26,7 @@ pre {
 	overflow: auto;
 	font-size: .875em;
 	padding: 15px;
-	background-color: #ec427f;
+	background-color: #5a30a3;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
